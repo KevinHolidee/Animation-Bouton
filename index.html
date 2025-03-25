@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Présentation Complète des Styles CSS</title>
+    <link rel="stylesheet" href="custom.css">
+    <style>
+      /* Style complémentaire pour l'affichage */
+      .section {
+          padding: 20px;
+          border: 1px solid #ddd;
+          margin-bottom: 20px;
+          border-radius: 8px;
+          background-color: #f9f9f9;
+      }
+      .couleur-sample {
+          width: 100px;
+          height: 20px;
+          display: inline-block;
+          margin-right: 10px;
+          vertical-align: middle;
+      }
+    </style>
+</head>
+<body>
+
+    <h1>Illustration Complète des Classes CSS</h1>
+
+    <!-- Typographie -->
+    <div class="section">
+        <h2>Typographie</h2>
+        <h1>Titre de Niveau 1</h1>
+        <h2>Titre de Niveau 2</h2>
+        <h3>Titre de Niveau 3</h3>
+        <h4>Titre de Niveau 4</h4>
+        <h5>Titre de Niveau 5</h5>
+        <h6>Titre de Niveau 6</h6>
+        <p>Ce texte de paragraphe utilise la police de caractère par défaut définie dans le body.</p>
+    </div>
+
+    <!-- Boutons -->
+    <div class="section">
+        <h2>Boutons</h2>
+        <button class="btn-primary">Bouton Principal</button>
+        <button class="btn-outline-primary">Bouton Contour</button>
+    </div>
+
+    <!-- Couleurs et Variables CSS -->
+    <div class="section">
+        <h2>Couleurs et Variables CSS</h2>
+        <div><span class="couleur-sample" style="background-color: var(--rd-primary-50);"></span>Couleur Primaire 50</div>
+        <div><span class="couleur-sample" style="background-color: var(--rd-primary-100);"></span>Couleur Primaire 100</div>
+        <div><span class="couleur-sample" style="background-color: var(--rd-primary-200);"></span>Couleur Primaire 200</div>
+        <div><span class="couleur-sample" style="background-color: var(--rd-primary-300);"></span>Couleur Primaire 300</div>
+        <div><span class="couleur-sample" style="background-color: var(--rd-primary-400);"></span>Couleur Primaire 400</div>
+        <div><span class="couleur-sample" style="background-color: var(--rd-primary-500);"></span>Couleur Primaire 500</div>
+        <div><span class="couleur-sample" style="background-color: var(--rd-primary-600);"></span>Couleur Primaire 600</div>
+        <div><span class="couleur-sample" style="background-color: var(--rd-primary-700);"></span>Couleur Primaire 700</div>
+        <div><span class="couleur-sample" style="background-color: var(--rd-primary-800);"></span>Couleur Primaire 800</div>
+        <div><span class="couleur-sample" style="background-color: var(--rd-primary-900);"></span>Couleur Primaire 900</div>
+    </div>
+    
+    <!-- Badges Produit -->
+    <div class="section">
+        <h2>Badges Produit</h2>
+        <div class="product-flags">
+            <span class="badge text-bg-primary">Nouveau</span>
+            <span class="badge text-bg-primary">En Promotion</span>
+        </div>
+    </div>
+    
+    <!-- Exemple de Surfaces et Bordures -->
+    <div class="section">
+        <h2>Exemples de Surfaces et Bordures</h2>
+        <div style="background-color: var(--rd-surface-secondary); padding: 10px;">
+            Surface secondaire avec couleur basée sur rd-primary-100.
+        </div>
+        <div style="border: 2px solid var(--rd-border-tag-product-primary); padding: 10px; margin-top: 10px;">
+            Tag produit avec bordure couleur rd-primary-900.
+        </div>
+    </div>
+
+</body>
+</html>
